@@ -20,14 +20,14 @@ console.log('React Heading: ',reactHeading)
  * JSX
  * 
  * */
-const jsxHeading=<>
+const jsxHeading=<React.Fragment>
     <h1>
         Hello  JSX
     </h1>
     <h3>
-        This is created using react!
+        This is created using react
     </h3>
 
-</>
+</React.Fragment>
 ReactDOM.createRoot(document.getElementById("root")).render(jsxHeading);
  
