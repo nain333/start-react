@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in JavaScript</title>
+</head>
+<body>
+    <div id="root">
+
+
+    </div>
+    <script type="text/babel">
+        function App(){
+            let arr = [1,2,3,4,5,6]
+            let obj = {
+                name:"Alexa",
+                age:18
+            }
+            const cars = ['Audi','BMW','Farrari']
+            return(
+                <>
+                <h1>
+                    Arrays and Objects in JavaScript
+                </h1>
+                <h2>
+                    {arr.map((num)=><h3>{num/2}</h3>)}
+                </h2>
+                <h2>
+                    {obj.name}
+                </h2>
+                <h3>
+                    {cars.map((car,index)=><h3><ul><li key={index} >{car}</li></ul></h3>)}
+                </h3>
+                </>
+
+            )
+        }
+        ReactDOM.createRoot(document.getElementById("root")).render(<App/>)
+    </script>
+</body>
+</html>
