@@ -1,0 +1,14 @@
+table,th,td{
+    border: 2px solid black;
+    
+}
+thead{
+    background-color: blue;
+}
+img{
+    height: 50px;
+    width:50px;
+}
+body{
+    text-align: center;
+}
