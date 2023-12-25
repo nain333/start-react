@@ -143,8 +143,27 @@
 
         }
         function App() {
+            let cars=true;
+            let user = true;
+            if(user){
+                user='Alexa'
+            }
+            else{
+                user='User'
+            }
+
+            if(cars){
+
+                return (<>
+                <h1>
+                    Hello {user}
+                </h1>
+                <Cars/>
+                </>)
+            }   
             return (
                 <>
+
                     <Cars />
                     <Students />
                 </>
