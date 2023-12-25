@@ -15,39 +15,43 @@
         let score = 0;
         let wickets=0;
         function clickOne(){
+            if(wickets!=10)
             score+=1;
             rootElement.render(<App/>)
             
         }
         function clickTwo(){
+            if(wickets!=10)
             score+=2;
             rootElement.render(<App/>)
         }
         function clickThree(){
+            if(wickets!=10)
             score+=3;
             rootElement.render(<App/>)
 
         }
         function clickFour(){
+            if(wickets!=10)
             score +=4;
             rootElement.render(<App/>)
         }
         function clickFive(){
+            if(wickets!=10)
             score += 5;
             rootElement.render(<App/>)
 
         }
         function clickSix(){
+            if(wickets!=10)
             score+=6;
             rootElement.render(<App/>)
         }
         function clickWicket(){
-            if(wickets<11){
+            if(wickets<10){
                 wickets+=1;
             }
-            else{
-                wickets="All out!"
-            }
+            
 
             
             rootElement.render(<App/>)
