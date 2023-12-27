@@ -76,9 +76,19 @@
         }
         const Result=()=>{
             
-            return(<div>
-                {ballWiseRes.map((res,index)=>(<span key={index}>{res}</span>))}
-            </div>)
+            return (
+    <div>
+        {ballWiseRes.map((res, index) => (
+            <>
+                {index % 6 === 0 ? <br /> : null}
+                <span key={index} style={res === 0 ? { fontWeight: 'bold' } : res === 'W' ? { color: 'red' } : null}>
+                    {res === 0 ? '.' : res}
+                </span>&nbsp;&nbsp;&nbsp;
+            </>
+        ))}
+    </div>
+);
+
         }
 
         const App = function () {
